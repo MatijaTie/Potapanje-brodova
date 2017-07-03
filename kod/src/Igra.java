@@ -26,38 +26,22 @@ public class Igra extends JPanel implements MouseListener {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private int brojPostavljenihBrodova = 0; // brojac pri postavljanju brodova
-	private int brojProtivnickihBrodova = 0; // brojac pri postavljanju protivnickih brodova
-	private int mojiUnisteniBrodovi = 0; // brojac mojih unistenih brodova za trigger kraja
-	private int protivnickiUnisteniBrodovi = 0; // brojac protivnickih unistenih
-												// brodova za trigger kraja
-	private int brojPucanja = 0; // brojac odigranih poteza za high score
-	private boolean prvi = false; // flag za odlucivanje protivnika kada pogodi
-									// prvi dio broda
-	JToggleButton[][] mojaPolja = new JToggleButton[10][10]; // moja polja
-																// predstavljena
-																// toggle
-																// buttonima
-	JToggleButton[][] protivnikPolja = new JToggleButton[10][10]; // protivnicka
-																	// polja
-																	// predstavljena
-																	// toggle
-																	// buttonima
-	JToggleButton okreniBtn = new JToggleButton("Okreni brod"); // button za
-																// okretanje
-																// broda pri
-																// pocetnom
-																// postavljanju
-	Vector<Brod> mojiBrodovi = new Vector<>(); // vektor u koji spremam moje
-												// brodove
-	Vector<Brod> protivnikBrodovi = new Vector<>(); // vektor u koji se spremaju
-													// protivnicki brodovi
-	AI ai = new AI(); // pomocna klasa za odlucivanje kako ce protivnik odigrati
-	Label score = new Label(String.valueOf(brojPucanja)); // Label za score
-	JTextPane text = new JTextPane(); // Text pane za prikaz odigranoga igracu
-	JScrollPane jsp = new JScrollPane(text); // Scroll panel u koji se posalje
-												// textPane
-	JButton izlaz = new JButton("X"); // Button za izlaz
+	private int brojPostavljenihBrodova = 0; 						// brojac pri postavljanju brodova
+	private int brojProtivnickihBrodova = 0; 						// brojac pri postavljanju protivnickih brodova
+	private int mojiUnisteniBrodovi = 0; 							// brojac mojih unistenih brodova za trigger kraja
+	private int protivnickiUnisteniBrodovi = 0; 					// brojac protivnickih unistenih brodova za trigger kraja
+	private int brojPucanja = 0; 									// brojac odigranih poteza za high score
+	private boolean prvi = false; 									// flag za odlucivanje protivnika kada pogodi prvi dio broda
+	JToggleButton[][] mojaPolja = new JToggleButton[10][10]; 		// moja polja predstavljena toggle buttonima
+	JToggleButton[][] protivnikPolja = new JToggleButton[10][10];   // protivnicka polja predstavljena toggle buttonima
+	JToggleButton okreniBtn = new JToggleButton("Okreni brod"); 	// button za okretanje broda pri pocetnom postavljanju
+	Vector<Brod> mojiBrodovi = new Vector<>(); 						// vektor u koji spremam moje brodove
+	Vector<Brod> protivnikBrodovi = new Vector<>(); 				// vektor u koji se spremaju protivnicki brodovi
+	AI ai = new AI(); 												// pomocna klasa za odlucivanje kako ce protivnik odigrati
+	Label score = new Label(String.valueOf(brojPucanja)); 			// Label za score
+	JTextPane text = new JTextPane(); 								// Text pane za prikaz odigranoga igracu
+	JScrollPane jsp = new JScrollPane(text); 						// Scroll panel u koji se posalje textPane
+	JButton izlaz = new JButton("X"); 								// Button za izlaz
 	JLabel background = new JLabel();
 
 	public Igra() {
