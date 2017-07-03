@@ -25,11 +25,10 @@ public class Igra extends JPanel implements MouseListener {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
 	private int brojPostavljenihBrodova = 0; // brojac pri postavljanju brodova
-	private int brojProtivnickihBrodova = 0; // brojac pri postavljanju
-												// protivnickih brodova
-	private int mojiUnisteniBrodovi = 0; // brojac mojih unistenih brodova za
-											// trigger kraja
+	private int brojProtivnickihBrodova = 0; // brojac pri postavljanju protivnickih brodova
+	private int mojiUnisteniBrodovi = 0; // brojac mojih unistenih brodova za trigger kraja
 	private int protivnickiUnisteniBrodovi = 0; // brojac protivnickih unistenih
 												// brodova za trigger kraja
 	private int brojPucanja = 0; // brojac odigranih poteza za high score
